@@ -9,11 +9,95 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/homepage.css" />
   <link rel="stylesheet" href="css/animations.css" />
+
+  <style>
+    .about-hero {
+      padding: 110px 7% 70px;
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-photo img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      border-radius: 28px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.14);
+    }
+
+    .about-text {
+      max-width: 850px;
+    }
+
+    .about-text h1 {
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 1;
+      letter-spacing: -2.5px;
+      margin-bottom: 24px;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+      color: #444;
+    }
+
+    .about-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .about-gallery img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 28px;
+      box-shadow: 0 22px 55px rgba(0,0,0,0.12);
+    }
+
+    .about-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .about-card {
+      background: white;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+    }
+
+    .about-card span {
+      color: #9b7d52;
+      font-weight: 800;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .about-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .about-gallery img {
+        height: auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-  <div class="cursor-glow"></div>
 
   <nav class="nav">
     <a href="index.html" class="logo">AVO</a>
@@ -25,9 +109,15 @@
     </div>
   </nav>
 
-  <section class="hero">
+  <section class="about-hero">
 
-    <div class="hero-text fade-up">
+    <div class="about-photo">
+      <img
+        src="assets/images/about-me/headshot.jpg"
+        alt="Ariana Van Ormer headshot" />
+    </div>
+
+    <div class="about-text">
 
       <p class="eyebrow">
         About Me
@@ -37,26 +127,23 @@
         I’m a builder, teammate, storyteller, and student-athlete.
       </h1>
 
-      <p class="hero-subtext">
-        I’m Ariana Van Ormer, a Babson College business student focused on marketing,
-        analytics, technology entrepreneurship, and AI-driven content strategy.
-        I’m drawn to work that blends research, creativity, communication, and measurable impact.
+      <p>
+        I’m Ariana Van Ormer, a Babson College business student interested in marketing,
+        analytics, technology entrepreneurship, AI tools, competitive research, and content strategy.
       </p>
 
       <p>
-        What separates me is not just what I have done, but how I work. I’m highly social,
-        collaborative, persistent, and comfortable building from zero. As a walk-on NCAA
-        student-athlete, startup founder, and community organization founder, I understand what
-        it means to show up consistently, take initiative, and keep improving even when the work
-        is messy.
+        What separates me is how I show up. I’m social, persistent, collaborative, and comfortable
+        building from zero. Whether I’m working on a startup, creating content, analyzing customer data,
+        or showing up as a walk-on NCAA student-athlete, I bring energy, consistency, and a strong
+        willingness to learn.
       </p>
 
-    </div>
+      <p>
+        I’m drawn to roles where I can combine research, creativity, communication, and execution —
+        especially when the work involves turning complex ideas into clear, engaging, useful content.
+      </p>
 
-    <div class="hero-media fade-up delay">
-      <img
-        src="assets/images/about-me/headshot.jpg"
-        alt="Ariana Van Ormer professional photo" />
     </div>
 
   </section>
@@ -64,7 +151,7 @@
   <section class="case-section reveal">
 
     <p class="eyebrow">
-      How I Work
+      Personality & Work Style
     </p>
 
     <h2>
@@ -72,24 +159,25 @@
     </h2>
 
     <p>
-      I thrive in environments where I can connect with people, learn quickly, take ownership,
-      and contribute to a team. Whether I’m interviewing customers for a startup, creating content
-      for a service organization, analyzing customer data, or showing up for practice, I bring
-      energy, curiosity, and consistency.
+      I thrive in environments where relationships matter. I enjoy connecting with people, working in teams,
+      asking questions, taking initiative, and learning by doing. My experiences across athletics, startups,
+      community work, and internships have taught me how to stay consistent even when the work is messy.
     </p>
 
-    <div class="visual-grid">
+    <div class="about-gallery">
+
       <img
-        src="assets/images/about-me/campus-community.jpg"
+        src="assets/images/about-me/campus-community.JPG"
         alt="Ariana involved in campus community" />
 
       <img
-        src="assets/images/about-me/friends-event.jpg"
+        src="assets/images/about-me/friends-event.JPG"
         alt="Ariana with friends at a campus event" />
 
       <img
         src="assets/images/about-me/athlete.jpg"
         alt="Ariana as a student athlete" />
+
     </div>
 
   </section>
@@ -103,9 +191,9 @@
       </h3>
 
       <p>
-        Across my work, the pattern is consistent: I like understanding people, identifying what
-        matters to them, and turning that insight into something useful — whether that is a pitch,
-        a piece of content, a campaign, a dashboard, or a recommendation.
+        Across everything I’ve done, the pattern is the same: I like understanding people,
+        identifying what matters to them, and turning that insight into something useful —
+        whether that is a pitch, campaign, video, dashboard, startup idea, or strategic recommendation.
       </p>
 
     </div>
@@ -119,21 +207,21 @@
     </p>
 
     <h2>
-      A mix of business thinking, creativity, and execution.
+      Business thinking, creative energy, and execution.
     </h2>
 
-    <div class="project-grid">
+    <div class="about-card-grid">
 
-      <div class="project-card">
+      <div class="about-card">
         <span>01</span>
         <h3>Research Mindset</h3>
         <p>
-          I enjoy digging into markets, people, behavior, and patterns to find insights that can
+          I enjoy digging into people, markets, behavior, and patterns to find insights that can
           become stronger strategy.
         </p>
       </div>
 
-      <div class="project-card">
+      <div class="about-card">
         <span>02</span>
         <h3>Content Instinct</h3>
         <p>
@@ -142,21 +230,21 @@
         </p>
       </div>
 
-      <div class="project-card">
+      <div class="about-card">
         <span>03</span>
         <h3>Team Energy</h3>
         <p>
-          I’m social, collaborative, and comfortable working with different personalities,
-          especially in fast-moving environments.
+          I’m social, collaborative, and comfortable working with different people, especially
+          in fast-moving environments.
         </p>
       </div>
 
-      <div class="project-card">
+      <div class="about-card">
         <span>04</span>
         <h3>Founder Grit</h3>
         <p>
-          Startup work taught me how to build from scratch, test ideas, talk to people,
-          adjust quickly, and keep moving.
+          Startup work taught me how to build from scratch, test ideas, talk to customers,
+          adapt quickly, and keep moving.
         </p>
       </div>
 

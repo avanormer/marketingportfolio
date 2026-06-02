@@ -2,13 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>TidyHook Startup | Ariana Van Ormer</title>
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/projects.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+
+  <style>
+    .tidyhook-logo-wrap {
+      width: 100%;
+      max-width: 520px;
+      margin: 45px 0 20px;
+      padding: 55px;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.12);
+    }
+
+    .tidyhook-logo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .strategy-card {
+      background: white;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+    }
+
+    .strategy-card span {
+      color: #9b7d52;
+      font-weight: 800;
+      display: block;
+      margin-bottom: 14px;
+    }
+  </style>
 </head>
+
 <body>
+
   <nav class="nav">
     <a href="../index.html" class="logo">AVO</a>
+
     <div class="nav-links">
       <a href="../projects.html">Projects</a>
       <a href="../about.html">About</a>
@@ -16,46 +63,110 @@
     </div>
   </nav>
 
-  <section class="project-hero">
-    <p class="eyebrow">Startup Strategy / Customer Discovery / Positioning</p>
-    <h1>TidyHook</h1>
-    <p>
-      Co-founded a student-led startup and led customer discovery, product positioning,
-      sales strategy, and digital presence development.
-    </p>
-    <img src="../assets/images/tidyhook/tidyhook-cover.png" alt="TidyHook startup project" />
-  </section>
+  <section class="project-hero reveal">
 
-  <section class="case-section">
-    <h2>Project Focus</h2>
-    <p>
-      TidyHook taught me how to move from an idea to a market-tested concept by using customer interviews,
-      feedback loops, and positioning strategy.
+    <p class="eyebrow">
+      Startup Strategy • Customer Discovery • Product Positioning
     </p>
 
-    <div class="visual-grid">
-      <img src="../assets/images/tidyhook/customer-discovery.png" alt="Customer discovery" />
-      <img src="../assets/images/tidyhook/website.png" alt="TidyHook website" />
-      <img src="../assets/images/tidyhook/product-positioning.png" alt="Product positioning" />
+    <h1>
+      TidyHook
+    </h1>
+
+    <p>
+      Co-founded a student-led startup and helped move the idea from early concept to a more market-tested product through customer discovery, positioning, sales strategy, and digital presence development.
+    </p>
+
+    <div class="tidyhook-logo-wrap">
+      <img
+        src="../assets/images/tidyhook/logo.png"
+        alt="TidyHook logo" />
     </div>
+
   </section>
 
-  <section class="case-section">
-    <h2>What I Did</h2>
+  <section class="case-section reveal">
+
+    <h2>
+      Project Focus
+    </h2>
+
+    <p>
+      TidyHook taught me what it actually looks like to build from zero. The work was not just about having an idea — it was about testing demand, listening to potential customers, adjusting the positioning, and learning how to communicate the value of a product clearly.
+    </p>
+
+  </section>
+
+  <section class="case-section reveal">
+
+    <h2>
+      What I Worked On
+    </h2>
+
+    <div class="strategy-grid">
+
+      <div class="strategy-card">
+        <span>01</span>
+        <h3>Customer Discovery</h3>
+        <p>
+          Conducted research and interviews to better understand customer pain points, product interest, and potential buying behavior.
+        </p>
+      </div>
+
+      <div class="strategy-card">
+        <span>02</span>
+        <h3>Product Positioning</h3>
+        <p>
+          Helped shape how the product was explained, who it was for, and what problem it solved in a simple and compelling way.
+        </p>
+      </div>
+
+      <div class="strategy-card">
+        <span>03</span>
+        <h3>Sales Strategy</h3>
+        <p>
+          Supported early-stage sales thinking by identifying how to communicate value, build interest, and test customer demand.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="case-section reveal">
+
+    <h2>
+      Key Contributions
+    </h2>
+
     <ul>
-      <li>Executed 50+ customer discovery interviews and market research studies.</li>
-      <li>Helped validate demand, refine product positioning, and shape sales tactics.</li>
-      <li>Developed and launched a website to generate interest.</li>
-      <li>Led sales strategy and messaging from concept to final pitch.</li>
+      <li>Executed 50+ customer discovery and market research conversations.</li>
+      <li>Supported product positioning from concept stage to final pitch.</li>
+      <li>Helped develop digital presence to generate early customer interest.</li>
+      <li>Worked in a fast-moving startup environment where feedback, iteration, and persistence mattered every day.</li>
     </ul>
 
-    <div class="insight-card">
-      <h3>Why this matters for Sparq</h3>
-      <p>
-        This project shows entrepreneurial thinking, structured research, and the ability to turn customer insight
-        into positioning — all valuable for competitive research and content strategy.
-      </p>
-    </div>
   </section>
+
+  <section class="case-section reveal">
+
+    <div class="insight-card">
+
+      <h3>
+        Why This Matters
+      </h3>
+
+      <p>
+        TidyHook is one of the clearest examples of how I work: I take initiative, talk to people, test ideas, adjust quickly, and keep moving. For a role involving research, content strategy, and recommendations, this experience matters because it shows I understand how to turn messy early-stage information into clearer positioning and action.
+      </p>
+
+    </div>
+
+  </section>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+
 </body>
 </html>
