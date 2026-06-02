@@ -1,112 +1,89 @@
 .hero {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 80px;
-
-max-width: 1400px;
-margin: 0 auto;
-
-min-height: 90vh;
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+  padding-top: 70px;
 }
 
 .hero-text {
-flex: 1;
-max-width: 700px;
-}
-
-.hero-media {
-flex-shrink: 0;
-}
-
-.hero-media img {
-width: 380px;
-height: 500px;
-
-object-fit: cover;
-object-position: center;
-
-border-radius: 36px;
-
-box-shadow: 0 35px 90px rgba(0,0,0,0.18);
-
-transition: all 0.4s ease;
-}
-
-.hero-media img:hover {
-transform: translateY(-8px);
-box-shadow: 0 45px 120px rgba(0,0,0,0.22);
+  max-width: 760px;
 }
 
 .hero-subtext {
-font-size: 1.15rem;
-line-height: 1.8;
-
-max-width: 620px;
-
-margin-top: 25px;
-margin-bottom: 35px;
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin: 26px 0;
 }
 
-.hero-buttons {
-display: flex;
-gap: 15px;
-margin-bottom: 45px;
-}
-
-.hero-stats {
-display: flex;
-gap: 40px;
-flex-wrap: wrap;
-}
-
-.hero-stats h3 {
-font-size: 2rem;
-margin-bottom: 5px;
-}
-
-.hero-stats p {
-font-size: 0.9rem;
-max-width: 140px;
-}
-
-.video-feature {
-background: #171717;
-color: white;
-}
-
-.video-feature p {
-color: #ddd;
-max-width: 750px;
-}
-
-.video-feature h2 {
-color: white;
-}
-
-@media (max-width: 1000px) {
-
-.hero {
-flex-direction: column;
-text-align: center;
-gap: 50px;
-}
-
-.hero-text {
-max-width: 100%;
-}
-
-.hero-buttons {
-justify-content: center;
-}
-
-.hero-stats {
-justify-content: center;
+.hero-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-media img {
-width: 320px;
-height: 420px;
+  width: 100%;
+  max-width: 470px;
+  height: 620px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 36px;
+  box-shadow: 0 35px 90px rgba(0,0,0,0.18);
 }
 
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stats h3 {
+  font-size: 2rem;
+  color: #171717;
+  margin-bottom: 4px;
+}
+
+.hero-stats p {
+  font-size: 0.85rem;
+  max-width: 145px;
+}
+
+.video-feature {
+  background: #171717;
+  color: white;
+}
+
+.video-feature p {
+  max-width: 720px;
+  color: #ddd;
+}
+
+.video-feature h2 {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-media img {
+    max-width: 100%;
+    height: 520px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-media img {
+    height: 430px;
+  }
+
+  .hero-stats {
+    gap: 24px;
+  }
 }
