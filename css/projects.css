@@ -1,0 +1,50 @@
+.project-hero {
+  padding-top: 110px;
+}
+
+.project-hero img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 32px;
+  margin-top: 35px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.15);
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.project-meta {
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  position: sticky;
+  top: 110px;
+}
+
+.project-meta p {
+  margin-bottom: 16px;
+}
+
+.project-body h2 {
+  margin-top: 50px;
+}
+
+.project-body ul {
+  margin: 18px 0 30px 20px;
+  color: #444;
+}
+
+@media (max-width: 900px) {
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-meta {
+    position: static;
+  }
+}
